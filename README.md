@@ -12,18 +12,49 @@ for now, there are only some outstanding pretrained weights for face recognize t
    - input size (112, 112, 3)     
    - iamge should aligned by standerd five facial landmark points.
    - normalize with 0.5
+
+|architecture|loss|dataset|
+|-------|-------|-------|
+|resnet18|arcface|ms1mv3|
+|resnet34|arcface|ms1mv3|
+|resnet50|arcface|ms1mv3|
+|resnet100|arcface|ms1mv3|
+|r2060|arcface|ms1mv3|
+|resnet18|cosface|glink360k|
+|resnet34|cosface|glink360k|
+|resnet50|cosface|glink360k|
+|resnet100|cosface|glink360k|
+
 2. [TreB1eN/InsightFace_Pytorch](https://github.com/TreB1eN/InsightFace_Pytorch), this repo has two pretrained model weights and no training logs to follow. Its implementation can't be use directly.
    - input size (112, 112, 3) 
    - iamge should aligned by standerd five facial landmark points.
    - normalize with 0.5
+
+
+|architecture|loss|dataset|
+|-------|-------|-------|
+|IR-SE50|arcface|vggface2|
+|Mobilefacenet| |vggface2|
+
 3. [timesler/facenet-pytorch](https://github.com/timesler/facenet-pytorch), this repo has two pretrained model weights. They are trained by [davidsandberg/facenet](https://github.com/davidsandberg/facenet) using softmax loss under Tensorflow frame.
    - input size (160, 160, 3) 
    - iamge should aligned by MTCNN.
    - normalize with 0.5
+
+|architecture|loss|dataset|
+|-------|-------|-------|
+|inceptionresnetv1|softmax loss|vggface2|
+|inceptionresnetv1|softmax loss|CASIA-Webface|
 4. [cmusatyalab/openface](https://github.com/cmusatyalab/openface), Unknow but probably has pretrained model weights.
 5. [ydwen/opensphere](https://github.com/ydwen/opensphere), Unknow but has a lot of pretrained model weights.
-6. [MuggleWang/CosFace_pytorch](https://github.com/MuggleWang/CosFace_pytorch) has pretrained model weights.
-7. [Xiaoccer/MobileFaceNet_Pytorch](https://github.com/Xiaoccer/MobileFaceNet_Pytorch)
-8. [KaiyangZhou/pytorch-center-loss](https://github.com/KaiyangZhou/pytorch-center-loss)
-9. [tengshaofeng/ResidualAttentionNetwork-pytoch](https://github.com/tengshaofeng/ResidualAttentionNetwork-pytorch)
-10. [wujiyang/Face_Pytorch](https://github.com/wujiyang/Face_Pytorch)
+
+|architecture|loss|dataset|
+|-------|-------|-------|
+|SFNet-20 (w/o BN)|sphereface|vggface2|
+|SFNet-64 (w/ BN)|sphereface|MS1M|
+|IResNet-100|sphereface|MS1M|
+1. [MuggleWang/CosFace_pytorch](https://github.com/MuggleWang/CosFace_pytorch) has pretrained model weights.
+2. [Xiaoccer/MobileFaceNet_Pytorch](https://github.com/Xiaoccer/MobileFaceNet_Pytorch)
+3. [KaiyangZhou/pytorch-center-loss](https://github.com/KaiyangZhou/pytorch-center-loss)
+4.  [tengshaofeng/ResidualAttentionNetwork-pytoch](https://github.com/tengshaofeng/ResidualAttentionNetwork-pytorch)
+5.   [wujiyang/Face_Pytorch](https://github.com/wujiyang/Face_Pytorch)
